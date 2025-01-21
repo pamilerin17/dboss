@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  transition: all .3s linear;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root{
+  --main-color:linear-gradient(rgb(101, 24, 24), white);
+  --primary-color:linear-gradient(rgb(211, 128, 128));
+  --white-color:rgb(205, 202, 202);
+}
+
+html::-webkit-scrollbar {
+  width: .8rem
+}
+
+html::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgb(101, 24, 24),
+    white);
+  border-radius: 2rem
+}

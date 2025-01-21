@@ -1,0 +1,168 @@
+/* General container for the Specialities section */
+.special {
+ text-align: center;
+ padding: 40px 20px;
+}
+
+.special h3 {
+ font-size: 1.5rem;
+ color: #333;
+}
+
+.special h2 {
+ font-size: 2.5rem;
+ font-weight: 700;
+ color: #333;
+ margin-top: 10px;
+}
+
+/* Container for all items */
+.hol {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+ justify-content: center;
+ padding: 20px;
+}
+
+/* Individual menu item box */
+.bre {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-between;
+ width: 30%;
+ /* Default width for larger screens */
+ background-color: #fff;
+ border-radius: 10px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ text-align: center;
+ padding: 20px;
+ transition: transform 0.3s ease;
+}
+
+/* Image styling */
+.bre img {
+ width: 100%;
+ max-width: 250px;
+ height: 200px;
+ object-fit: cover;
+ border-radius: 8px;
+ margin-bottom: 20px;
+}
+
+/* Title and description styles */
+.bre h2 {
+ font-size: 1.5rem;
+ font-weight: 600;
+ color: #333;
+ margin-bottom: 10px;
+}
+
+.bre h1 {
+ font-size: 1rem;
+ color: #777;
+ font-weight: 400;
+ margin-bottom: 20px;
+}
+
+/* Price styling */
+.price {
+ font-size: 1.2rem;
+  color: rgb(179, 79, 79);
+ font-weight: 700;
+ margin-bottom: 20px;
+}
+
+/* Button styling */
+.order {
+background-color:  rgb(179, 79, 79);
+ color: #fff;
+ border: none;
+ padding: 10px 20px;
+ font-size: 1rem;
+ cursor: pointer;
+ border-radius: 5px;
+ transition: background-color 0.3s ease;
+}
+
+.order:hover {
+ background-color: (rgb(101, 24, 24), white);
+ color: rgb(8, 7, 7);
+ transition: .5s;
+}
+
+/* Responsive layout for larger screens (Tablets and above) */
+@media (min-width: 768px) {
+ .bre {
+  width: 30%;
+  /* 3 items per row */
+ }
+}
+
+/* Responsive layout for smaller screens (Tablets and below) */
+@media (max-width: 768px) {
+ .hol {
+  padding: 0 10px;
+ }
+
+ .bre {
+  width: 100%;
+  /* Stack items vertically */
+  margin-bottom: 30px;
+ }
+
+ .bre img {
+  max-width: 220px;
+  /* Adjust image size */
+  height: 180px;
+ }
+
+ .bre h2 {
+  font-size: 1.3rem;
+  /* Adjust heading size */
+ }
+
+ .bre h1 {
+  font-size: 0.9rem;
+  /* Adjust description font size */
+ }
+
+ .price {
+  font-size: 1rem;
+  /* Adjust price font size */
+ }
+
+ .order {
+  font-size: 0.9rem;
+  /* Adjust button font size */
+ }
+}
+
+/* Further adjustments for very small screens (Mobile phones) */
+@media (max-width: 480px) {
+ .bre img {
+  height: 160px;
+  /* Smaller image for small screens */
+ }
+
+ .bre h2 {
+  font-size: 1.2rem;
+  /* Smaller heading size */
+ }
+
+ .bre h1 {
+  font-size: 0.85rem;
+  /* Smaller description font size */
+ }
+
+ .price {
+  font-size: 1rem;
+  /* Smaller price font size */
+ }
+
+ .order {
+  font-size: 0.8rem;
+  /* Smaller button font size */
+ }
+}

@@ -1,0 +1,127 @@
+/* Container for the service section */
+.serv {
+ text-align: center;
+ padding: 40px 20px;
+}
+
+.our {
+ font-size: 2.5rem;
+ font-weight: 700;
+ margin-top: 10px;
+ color: #333;
+}
+
+/* Container that holds individual service items */
+.hold {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+ gap: 10px;
+ padding: 20px;
+}
+
+/* Each service box */
+.second {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-between;
+ background-color: #fff;
+ border-radius: 10px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ padding: 20px;
+ transition: transform 0.3s ease;
+ text-align: center;
+ width: 30%;
+ /* Default width for larger screens */
+ margin-bottom: 20px;
+}
+
+.second:hover {
+ transform: translateY(-10px);
+ /* Lift effect on hover */
+}
+
+.second img {
+ width: 100%;
+ max-width: 250px;
+ height: 200px;
+ object-fit: cover;
+ border-radius: 8px;
+ margin-bottom: 20px;
+  color: rgb(179, 79, 79);
+}
+
+/* Title styling */
+.second h2 {
+ font-size: 1.6rem;
+ font-weight: 600;
+ color: rgb(179, 79, 79);
+ margin-bottom: 10px;
+}
+
+/* Paragraph text styling */
+.second p {
+ font-size: 1rem;
+  color: var(--primary-color);
+ font-weight: 400;
+ line-height: 1.6;
+ padding: 0 15px;
+}
+
+/* Responsive layout for larger screens (Tablets and above) */
+@media (min-width: 768px) {
+ .second {
+  width: 30%;
+  /* 3 items per row */
+ }
+}
+
+/* Responsive layout for smaller screens (Tablets and below) */
+@media (max-width: 768px) {
+ .hold {
+  padding: 0 10px;
+ }
+
+ .second {
+  width: 100%;
+  /* Stack items vertically */
+  margin-bottom: 30px;
+ }
+
+ .second img {
+  height: 180px;
+  /* Adjust image height for smaller screens */
+  max-width: 220px;
+  /* Adjust image width */
+ }
+
+ .second h2 {
+  font-size: 1.3rem;
+  /* Adjust heading font size */
+ }
+
+ .second p {
+  font-size: 0.9rem;
+  /* Adjust paragraph font size */
+ }
+}
+
+/* Further adjustments for very small screens (Mobile phones) */
+@media (max-width: 480px) {
+ .second img {
+  height: 160px;
+  /* Smaller image size for smaller screens */
+  max-width: 180px;
+ }
+
+ .second h2 {
+  font-size: 1.2rem;
+  /* Adjust heading font size */
+ }
+
+ .second p {
+  font-size: 0.85rem;
+  /* Further reduce paragraph font size */
+ }
+}
