@@ -1,0 +1,126 @@
+/* Footer Container */
+.footer {
+ background-color: #2c2c2c;
+ color: #fff;
+ padding: 40px 20px;
+ text-align: center;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 20px;
+}
+
+/* Brand Section */
+.footer h2 {
+ font-size: 2rem;
+ color: rgb(179, 79, 79);
+ margin-bottom: 15px;
+}
+
+.footer p {
+ font-size: 1rem;
+ color: #bbb;
+ line-height: 1.6;
+ margin-bottom: 20px;
+
+ 
+}
+
+/* Social Icons */
+.footer svg {
+ margin: 0 10px;
+ font-size: 1.5rem;
+ color: rgb(179, 79, 79);
+ cursor: pointer;
+ transition: color 0.3s ease;
+ margin-top: 20px;
+}
+
+.footer svg:hover {
+ color: #fff;
+}
+
+/* Open Hours Section */
+.open {
+ flex: 1 1 300px;
+}
+
+.open h2 {
+ font-size: 1.8rem;
+ color: rgb(179, 79, 79);
+ margin-bottom: 10px;
+}
+
+.open h1 {
+ font-size: 1rem;
+ color: #bbb;
+ line-height: 1.8;
+ white-space: pre-line;
+}
+
+/* Newsletter Section */
+.newsletter {
+ flex: 1 1 300px;
+ background: #444;
+ padding: 20px;
+ border-radius: 10px;
+}
+
+.newsletter .mail {
+ width: 100%;
+ padding: 15px;
+ font-size: 1rem;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ margin-bottom: 15px;
+ background-color: #2c2c2c;
+ color: #fff;
+}
+
+.newsletter .mail::placeholder {
+ color: #ccc;
+}
+
+.newsletter .buttonn {
+ width: 100%;
+ padding: 10px 20px;
+ background-color: rgb(179, 79, 79);
+ color: white;
+ font-size: 1rem;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+.newsletter .buttonn:hover {
+ background-color: rgb(5, 0, 0);
+ color: linear-gradient(rgb(101, 24, 24), white);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+ .footer {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ }
+
+ .open,
+ .newsletter {
+  flex: 1 1 100%;
+ }
+
+ .open h2,
+ .open h1 {
+  margin-bottom: 15px;
+ }
+
+ .newsletter .mail {
+  font-size: 0.9rem;
+ }
+
+ .newsletter .buttonn {
+  font-size: 0.9rem;
+ }
+}

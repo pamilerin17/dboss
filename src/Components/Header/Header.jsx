@@ -20,7 +20,7 @@ function Header() {
         <p className="call"><FaPhoneAlt/>  +234 712 3456 213</p>
         <p className="location"><IoIosMail/> dboss@gmail.com
         </p>
-        <p className="open">Open Hours: Monday-Sunday 8:00AM-9:00PM</p>
+        {/* <p className="open">Open Hours: Monday-Sunday 8:00AM-9:00PM</p> */}
         </div>
         </div>
 

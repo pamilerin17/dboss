@@ -7,6 +7,10 @@ import Restaurant from './Components/Restaurant/Restaurant'
 import Services from './Components/Services/Services'
 import Specialities from './Components/Specialities/Specialities';
 import Chefs from './Components/Chefs/Chefs'
+import Book from './Components/Book/Book'
+import Testimony from './Components/Testimony/Testimony';
+import Blog from './Components/Blog/Blog'
+import Footer from './Components/Footer/Footer'
 
 function App() {
 
@@ -16,8 +20,9 @@ function App() {
     <Router>
       <Header/>
       <Routes>
-        <Route path='/' element={<><Home/><Restaurant/><Services/><Specialities/><Chefs/></>}/>
+        <Route path='/' element={<><Home/><Restaurant/><Services/><Specialities/><Chefs/><Book/><Testimony/><Blog/></>}/>
       </Routes>
+      <Footer/>
     </Router>
     </>
   )

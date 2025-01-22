@@ -1,0 +1,100 @@
+/* General container styling */
+.tes {
+ text-align: center;
+ margin-top: 100px;
+}
+
+.tes h2 {
+ font-size: 1.5rem;
+ color: rgb(179, 79, 79);
+ margin-bottom: 10px;
+}
+
+.tes h1 {
+ font-size: 2.5rem;
+ color: #333;
+ margin-bottom: 20px;
+}
+
+/* Testimonial container */
+.test {
+ margin-right: 20px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ background: #f9f9f9;
+ border-radius: 10px;
+ padding: 20px;
+ /* margin: 20px auto; */
+ max-width: 400px;
+ box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.test img {
+ width: 80px;
+ height: 80px;
+ border-radius: 50%;
+ margin-bottom: 20px;
+}
+
+.test p {
+ font-size: 1rem;
+ color: #555;
+ margin: 10px 0 20px;
+ line-height: 1.6;
+}
+
+.test h2 {
+ font-size: 1.2rem;
+ color: #333;
+ font-weight: bold;
+ margin-bottom: 5px;
+}
+
+.test h1 {
+ font-size: 1rem;
+ text-transform: uppercase;
+ color: #888;
+}
+
+/* Responsive grid layout */
+@media (min-width: 768px) {
+ .test {
+  display: inline-block;
+  width: calc(33.33% - 40px);
+  margin: 20px;
+  vertical-align: top;
+ }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+ .test {
+  width: calc(50% - 40px);
+  margin: 20px;
+ }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 479px) {
+ .tes h1 {
+  font-size: 1.8rem;
+ }
+
+ .test {
+  width: calc(100% - 40px);
+  margin: 20px auto;
+ }
+
+ .test p {
+  font-size: 0.9rem;
+ }
+
+ .test h2 {
+  font-size: 1rem;
+ }
+
+ .test h1 {
+  font-size: 0.9rem;
+ }
+}
