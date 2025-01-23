@@ -26,7 +26,9 @@ function Footer() {
        <textarea className="mail" name="Message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
        <input type="submit" value="Send Message" className="buttonn" />
       </div>
+      {/* <p className="copy">Copyright ©2025 All rights reserved </p> */}
       </div>
+      
     </div>
   )
 }

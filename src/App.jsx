@@ -11,6 +11,7 @@ import Book from './Components/Book/Book'
 import Testimony from './Components/Testimony/Testimony';
 import Blog from './Components/Blog/Blog'
 import Footer from './Components/Footer/Footer'
+import About from './Components/About/About'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Header/>
       <Routes>
         <Route path='/' element={<><Home/><Restaurant/><Services/><Specialities/><Chefs/><Book/><Testimony/><Blog/></>}/>
+        <Route path='/about' element={<><About/><Restaurant/><Services/><Chefs/><Book/><Testimony/></>}/>
       </Routes>
       <Footer/>
     </Router>

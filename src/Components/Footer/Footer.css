@@ -97,6 +97,10 @@
  background-color: rgb(5, 0, 0);
  color: linear-gradient(rgb(101, 24, 24), white);
 }
+/* .copy{
+ display: flex;
+ flex-direction: column;
+} */
 
 /* Responsive Design */
 @media (max-width: 768px) {
