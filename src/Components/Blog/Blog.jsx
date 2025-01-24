@@ -16,25 +16,25 @@ function Blog() {
       <div className="recent">
        <img src={Image1} alt="" />
        <p>Sept 05, 2020</p>
-       <h2>Taste Like Asia</h2>
+       <h2>Taste The Delicious Food in Asia</h2>
        <h1>Read more <FaArrowRight/></h1>
       </div>
        <div className="recent">
        <img src={Image2} alt="" />
        <p>Sept 05, 2020</p>
-       <h2>Taste Like Asia</h2>
+       <h2>Taste The Delicious Food in Asia</h2>
        <h1>Read more <FaArrowRight/></h1>
       </div>
          <div className="recent">
        <img src={Image3} alt="" />
        <p>Sept 05, 2020</p>
-       <h2>Taste Like Asia</h2>
+       <h2>Taste The Delicious Food in Asia</h2>
        <h1>Read more <FaArrowRight/></h1>
       </div>
        <div className="recent">
        <img src={Image4} alt="" />
        <p>Sept 05, 2020</p>
-       <h2>Taste Like Asia</h2>
+       <h2>Taste The Delicious Food in Asia</h2>
        <h1>Read more <FaArrowRight/></h1>
       </div>
     </div>

@@ -1,0 +1,41 @@
+.tab {
+ background-image: url('../../assets/bg_3.jpg');
+ /* Replace with your image path */
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+ color: #fff;
+ padding: 100px 20px;
+ text-align: center;
+ margin-bottom: 95px;
+ margin-right: -30px;
+}
+
+.tab h2 {
+ font-size: 3rem;
+ font-weight: bold;
+ text-transform: uppercase;
+ margin: 0;
+ color: #f4f4f4;
+ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+ .tab {
+  padding: 70px 15px;
+ }
+
+ .tab h2 {
+  font-size: 2.2rem;
+ }
+}
+
+@media (max-width: 480px) {
+ .tab {
+  padding: 50px 10px;
+ }
+
+ .tab h2 {
+  font-size: 1.8rem;
+ }
+}

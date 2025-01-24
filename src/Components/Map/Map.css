@@ -1,0 +1,81 @@
+/* Contact form container */
+.cont {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 20px;
+ background-color: #f9f9f9;
+ margin: 20px auto;
+ border-radius: 10px;
+ box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+ width: 90%;
+ max-width: 400px;
+}
+
+/* Contact heading */
+.cont h2 {
+ font-size: 24px;
+ font-weight: bold;
+ margin-bottom: 20px;
+ color: #333;
+ text-align: center;
+}
+
+/* Input field styling */
+.nam {
+ width: 100%;
+ padding: 12px;
+ margin-bottom: 15px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ font-size: 16px;
+ color: #555;
+}
+
+.nam::placeholder {
+ color: #999;
+}
+
+/* Submit button styling */
+.buttton {
+ width: 100%;
+ padding: 12px;
+ background-color: rgb(179, 79, 79);
+ color: white;
+ border: none;
+ border-radius: 5px;
+ font-size: 16px;
+ font-weight: bold;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+}
+
+.buttton:hover {
+ background-color: linear-gradient(rgb(211, 128, 128));
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+ .cont {
+  padding: 15px;
+  width: 95%;
+ }
+
+ .cont h2 {
+  font-size: 20px;
+ }
+
+ .nam {
+  font-size: 14px;
+ }
+
+ .buttton {
+  font-size: 14px;
+ }
+}
+
+@media screen and (max-width: 480px) {
+ .cont h2 {
+  font-size: 18px;
+ }
+}

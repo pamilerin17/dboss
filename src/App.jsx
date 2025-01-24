@@ -12,7 +12,13 @@ import Testimony from './Components/Testimony/Testimony';
 import Blog from './Components/Blog/Blog'
 import Footer from './Components/Footer/Footer'
 import About from './Components/About/About'
-
+import Menu from './Components/Menu/Menu'
+import Our from './Components/Our/Our'
+import Stories from './Components/Stories/Stories'
+import Story from './Components/Story/Story'
+import Contact from './Components/Contact/Contact'
+import Map from './Components/Map/Map'
+import Table from './Components/Table/Table'
 function App() {
 
 
@@ -22,7 +28,11 @@ function App() {
       <Header/>
       <Routes>
         <Route path='/' element={<><Home/><Restaurant/><Services/><Specialities/><Chefs/><Book/><Testimony/><Blog/></>}/>
-        <Route path='/about' element={<><About/><Restaurant/><Services/><Chefs/><Book/><Testimony/></>}/>
+        <Route path='/About' element={<><About/><Restaurant/><Services/><Chefs/><Book/><Testimony/></>}/>
+        <Route path='/Menu' element={<><Menu/><Specialities/><Our/></>}/>
+        <Route path='/Stories' element={<><Stories/><Story/></>}/>
+        <Route path='/Contact' element={<><Contact/><Map/></>}/>
+        <Route path='/Table' element={<><Table/><Book/></>}/>
       </Routes>
       <Footer/>
     </Router>
